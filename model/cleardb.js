@@ -1,12 +1,12 @@
 'use strict';
 
-const Record = require('../model/record');
+const Record = require('../model/record.js');
 const mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
 
 module.exports = () => {
   return new Promise((resolve, reject) =>{
-    
+
     Record.findOne().sort({'date':1}).limit(1)
       .then(record=>{
 
@@ -17,7 +17,7 @@ module.exports = () => {
             resolve();
           })
           .catch(err=>{
-            console.log(err); 
+            console.log(err);
           });
       })
       .catch(err => reject(err));
