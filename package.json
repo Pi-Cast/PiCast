@@ -26,7 +26,7 @@
     "bluebird": "^3.5.1",
     "colors": "^1.1.2",
     "dotenv": "^4.0.0",
-    "mongoose": "^4.13.4",
+    "mongoose": "^5.7.0",
     "node-cron": "^1.2.1",
     "prompt": "^1.0.0",
     "rpio": "^0.9.19",
@@ -34,8 +34,8 @@
   },
   "devDependencies": {
     "assert": "^1.4.1",
-    "expect": "^21.2.1",
-    "jest": "^21.2.1",
+    "expect": "^25.0.0",
+    "jest": "^25.0.0",
     "sinon": "^4.1.2"
   }
 }
